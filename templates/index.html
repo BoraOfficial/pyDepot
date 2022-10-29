@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html data-lt-installed="true" lang="en-US"><head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<title>NAS</title>
+<div class="page">
+  <center>
+    <form action = "/upload/" method = "POST" 
+        enctype = "multipart/form-data" id="file_form">
+        <input type = "file" name = "file" multiple id="browse" style="display: none;"/>
+        <input type = "submit" id="upload" value="Upload Files" style="display: none;"/>
+        <div class="wrapper">
+          <label for="browse" id="file_upload">Choose Files</label>
+          <label for="upload" id="_upload" onclick="upload()">Upload Files</label>
+         
+        </div>
+    </form>   
+  </center>
+
+    <center><iframe id="dir" src="loading" style="width: 600px; height: 550px; border: none;"></iframe></center>
+
+
+
+  </div>
+  <center><img id="loading" src="{{ url_for('static', filename='load.gif') }}"></center>
+  <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+  <script src="{{ url_for('static', filename='jquery.cookie.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.2/script/jquery.jscrollpane.min.js" integrity="sha512-EqofP+sBEn/OWcyAINAUnewpwC0e9zc0GvyiVeE3qeHYxqtdCcNocVBUiZhGWbPFWGTWxfJ60CcOK6HQ6G7uiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body></html>

@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+html,
+body {
+  background-color: black;
+  overflow: hidden;
+}
+.pinpad {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.pinpad .wrapper {
+  display: block;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background-color: #263238;
+  border-radius: 5px;
+  padding: 25px;
+}
+.pinpad .wrapper:before,
+.pinpad .wrapper:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.pinpad .wrapper:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+.pinpad .wrapper .pin {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #90a4ae;
+}
+.pinpad .wrapper .pin i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pinpad .wrapper span {
+  display: block;
+  padding: 5px;
+}
+.pinpad .wrapper button {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  color: #90a4ae;
+  background-color: #37474f;
+  -webkit-box-shadow: 0 5px 8px -6px #000;
+  -moz-box-shadow: 0 5px 8px -6px #000;
+  box-shadow: 0 5px 8px -6px #000;
+}
+.pinpad .wrapper button span {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+}
+.pinpad .wrapper button:hover {
+  color: #8a9faa;
+  background-color: #334249;
+}
+.pinpad .wrapper button:active,
+.pinpad .wrapper button:focus {
+  color: #8198a3;
+  background-color: #2d3940;
+  -webkit-box-shadow: 0 2px 8px -6px #000;
+  -moz-box-shadow: 0 2px 8px -6px #000;
+  box-shadow: 0 2px 8px -6px #000;
+}
+.shake {
+	animation: shake 0.5s infinite;
+}
+@keyframes shake {
+	0% {
+		transform: rotate(8deg);
+	}
+	50% {
+		transform: rotate(-8deg);
+	}
+	100% {
+		transform: rotate(8deg);
+	}
+}

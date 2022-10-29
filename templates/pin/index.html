@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Enter pin</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css'><link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <style>body{ touch-action: manipulation;}</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="pinpad">
+  <div class="wrapper">
+    <div class="pin">
+      <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+    </div>
+    <div class="row">
+      <button onclick="save1()"><span>1</span></button><button onclick="save2()"><span>2</span></button><button onclick="save3()"><span>3</span></button>
+    </div>
+    <div class="row">
+      <button onclick="save4()"><span>4</span></button><button onclick="save5()"><span>5</span></button><button onclick="save6()"><span>6</span></button>
+    </div>
+    <div class="row">
+      <button onclick="save7()"><span>7</span></button><button onclick="save8()"><span>8</span></button><button onclick="save9()"><span>9</span></button>
+    </div>
+    <div class="row">
+      <button><span class="fas fa-arrow-left"></span></button><button><span>0</span></button><button><span class="fas fa-check"></span></button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
