@@ -1,9 +1,9 @@
 # PyNAS
 ---
-
+<br>
 PyNAS is a lightweight <a href="https://en.wikipedia.org/wiki/Network-attached_storage">Network-attached storage</a> manager.
 
-Basically, it's a <a herf="https://en.wikipedia.org/wiki/Cloud_storage">Cloud Storage</a> that you host yourself!
+Basically, it's a <a href="https://en.wikipedia.org/wiki/Cloud_storage">Cloud Storage</a> that you host yourself!
 
 ---
 
