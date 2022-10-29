@@ -8,7 +8,7 @@ Basically, it's a <a href="https://en.wikipedia.org/wiki/Cloud_storage">Cloud St
 ---
 
 ## So what are the advantages?
-Well, of the biggest advantage is that it's 100% private, you don't have to take my word for it though, go through the code yourself!
+Well, one of the biggest advantages is that it's 100% private, you don't have to take my word for it though, go through the code yourself!
 
 Also, there isn't a "Storage Limit". You can upload as many files as you like if you have enough space!
 
