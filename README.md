@@ -17,7 +17,9 @@ Also, there isn't a "Storage Limit". You can upload as many files as you like if
 # How do I use it?
 First you need to have <a href="https://python.org">Python</a> installed.
 
-Then you're going to install the dependencies by this command:
+Then simply click the <b>Code</b> button and download as a zip and extract it.
+
+After that you're going to install the dependencies by this command:
 ```
 pip install -r requirements.txt
 ```
