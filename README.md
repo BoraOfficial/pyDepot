@@ -19,7 +19,7 @@ First you need to have <a href="https://python.org">Python</a> installed.
 
 Then simply click the <b>Code</b> button and download as a zip and extract it.
 
-After that you're going to install the dependencies by this command:
+After that you're going to install the dependencies using this command:
 ```
 pip install -r requirements.txt
 ```
