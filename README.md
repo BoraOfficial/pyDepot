@@ -33,7 +33,7 @@ python server.py
 Now, your very own Cloud Storage is running. Check it out by going to this URL:
 
 ```
-127.0.0.1
+127.0.0.1:5000
 ```
 
 
